@@ -1,0 +1,104 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- App Bar Layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:title="Calculator"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Your existing content here -->
+
+        <TextView
+            android:id="@+id/textView_second_no"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="@string/first_number"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="179dp"
+            android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/editText_second_no"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView_first_no"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:text="@string/second_number"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="103dp"
+        android:layout_marginLeft="20dp" />
+    <EditText
+        android:id="@+id/editText_first_no"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/textView_answer"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="446dp"
+        tools:ignore="HardcodedText" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
